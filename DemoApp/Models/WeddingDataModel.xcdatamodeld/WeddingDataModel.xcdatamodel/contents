@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Business" representedClassName="Business" syncable="YES">
+        <attribute name="businessAddress" optional="YES" attributeType="String"/>
+        <attribute name="businessContact" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="businessDescription" optional="YES" attributeType="String"/>
+        <attribute name="businessEmail" optional="YES" attributeType="String"/>
+        <attribute name="businessImageURL" optional="YES" attributeType="String"/>
+        <attribute name="businessName" optional="YES" attributeType="String"/>
+        <attribute name="businessOwner" optional="YES" attributeType="String"/>
+        <attribute name="objectId" optional="YES" attributeType="String"/>
+        <relationship name="businessCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="businessCategory" inverseEntity="Category"/>
+        <relationship name="businessSubCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SubCategory" inverseName="businessSubCategory" inverseEntity="SubCategory"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="objectId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="categoryImageURL" optional="YES" attributeType="String"/>
+        <attribute name="categoryName" optional="YES" attributeType="String"/>
+        <attribute name="objectId" optional="YES" attributeType="String"/>
+        <relationship name="businessCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Business" inverseName="businessCategory" inverseEntity="Business"/>
+        <relationship name="subCategoryCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SubCategory" inverseName="categorySubCategoy" inverseEntity="SubCategory"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="objectId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SubCategory" representedClassName="SubCategory" syncable="YES">
+        <attribute name="objectId" optional="YES" attributeType="String"/>
+        <attribute name="subCategoryImageURL" optional="YES" attributeType="String"/>
+        <attribute name="subCategoryName" optional="YES" attributeType="String"/>
+        <relationship name="businessSubCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Business" inverseName="businessSubCategory" inverseEntity="Business"/>
+        <relationship name="categorySubCategoy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="subCategoryCategory" inverseEntity="Category"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="objectId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="SubCategory" positionX="-54" positionY="-9" width="128" height="118"/>
+        <element name="Business" positionX="-36" positionY="9" width="128" height="193"/>
+    </elements>
+</model>

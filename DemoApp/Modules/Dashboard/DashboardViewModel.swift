@@ -10,5 +10,5 @@ import UIKit
 import Framework
 
 class DashboardViewModel: BaseViewModel {
-    
+    var categoryCollection: [Category] = [Category]()
 }

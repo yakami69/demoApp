@@ -24,24 +24,40 @@ class DashboardController: AppBaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        test()
         screenView.collectionView.delegate = self
         screenView.collectionView.dataSource = self
     }
     
-    
+    func test() {
+        guard let jSONURL = Bundle.main.url(forResource: "MOCK_DATA", withExtension: ".json"),
+            let jSONData = try? Data(contentsOf: jSONURL) else {
+                debugPrint("File Not Found / File Not Loaded")
+                return
+        }
+        let decoder = JSONDecoder()
+
+        do {
+            let people = try decoder.decode([Category].self, from: jSONData)
+//            print("Decoded:\(people)\n------------------")
+            viewModel.categoryCollection.append(contentsOf: people)
+//            print("\n\n----------------------\nViewModel: \(viewModel.categoryCollection)")
+        } catch {
+            print("Error: \(error.localizedDescription)")
+        }
+    }
 }
 
 extension DashboardController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return viewModel.categoryCollection.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCollectionViewCell", for: indexPath) as! CategoryCollectionViewCell
-        cell.backgroundColor = .red
-//        cell.categoryLabelText = "Title" //viewModel.categoryData.name
+        cell.categoryLabelText = viewModel.categoryCollection[indexPath.row].categoryName!
         return cell
     }
     
@@ -62,6 +78,10 @@ extension DashboardController: UICollectionViewDelegate, UICollectionViewDelegat
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 9
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
     
 }
