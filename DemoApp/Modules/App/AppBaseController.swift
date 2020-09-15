@@ -28,6 +28,7 @@ class AppBaseController: BaseController {
     
     lazy var menuButton:  UIBarButtonItem = {
         let button = UIBarButtonItem(image: .back, style: .plain, target: self, action: #selector(backButtonClicked))
+
         button.tag = BaseBarButton.menu.rawValue
         return button
     }()
