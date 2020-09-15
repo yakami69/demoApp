@@ -38,9 +38,6 @@
 		05B3BC01251147EC00D44A9B /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BC00251147EC00D44A9B /* AppEnvironment.swift */; };
 		05D9B6C5251153860040B019 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D9B6C4251153860040B019 /* DataModel.swift */; };
 		05D9B6C925115F250040B019 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = 05D9B6C825115F250040B019 /* MOCK_DATA.json */; };
-		05D9B6CB251162140040B019 /* AccessDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D9B6CA251162140040B019 /* AccessDB.swift */; };
-		05D9B6CD251162220040B019 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D9B6CC251162220040B019 /* CoreDataStack.swift */; };
-		05D9B6D02511626D0040B019 /* WeddingDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05D9B6CE2511626D0040B019 /* WeddingDataModel.xcdatamodeld */; };
 		05D9B6EA251165790040B019 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D9B6E9251165790040B019 /* String.swift */; };
 		9461259417ED0520E9E43B54 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0621CBDA9297D6B8268AD40A /* Pods_DemoApp.framework */; };
 /* End PBXBuildFile section */
@@ -76,9 +73,6 @@
 		05B3BC00251147EC00D44A9B /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		05D9B6C4251153860040B019 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		05D9B6C825115F250040B019 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
-		05D9B6CA251162140040B019 /* AccessDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessDB.swift; sourceTree = "<group>"; };
-		05D9B6CC251162220040B019 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		05D9B6CF2511626D0040B019 /* WeddingDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeddingDataModel.xcdatamodel; sourceTree = "<group>"; };
 		05D9B6E9251165790040B019 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0621CBDA9297D6B8268AD40A /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA0AB78BBB559071F584459 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +124,7 @@
 				05B3BBD925110FBA00D44A9B /* Localization */,
 				05B3BBD625110F6E00D44A9B /* Route */,
 				0527A9E4250D44E8007A043A /* Modules */,
-				0527A9E3250D44DB007A043A /* Models */,
+				0527A9E3250D44DB007A043A /* Model */,
 				0527A9E0250D44A4007A043A /* Supporting */,
 			);
 			path = DemoApp;
@@ -157,14 +151,13 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		0527A9E3250D44DB007A043A /* Models */ = {
+		0527A9E3250D44DB007A043A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				05D9B6C825115F250040B019 /* MOCK_DATA.json */,
 				05D9B6C4251153860040B019 /* DataModel.swift */,
-				05D9B6CE2511626D0040B019 /* WeddingDataModel.xcdatamodeld */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0527A9E4250D44E8007A043A /* Modules */ = {
@@ -226,8 +219,6 @@
 		05B3BBE02511112B00D44A9B /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				05D9B6CC251162220040B019 /* CoreDataStack.swift */,
-				05D9B6CA251162140040B019 /* AccessDB.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -406,19 +397,16 @@
 				05B3BBEA2511130800D44A9B /* DashboardController.swift in Sources */,
 				05D9B6C5251153860040B019 /* DataModel.swift in Sources */,
 				05B3BC01251147EC00D44A9B /* AppEnvironment.swift in Sources */,
-				05D9B6CB251162140040B019 /* AccessDB.swift in Sources */,
 				05D9B6EA251165790040B019 /* String.swift in Sources */,
 				0527AA08250FC18C007A043A /* AppLaunchBuilder.swift in Sources */,
 				05B3BBDD25110FD800D44A9B /* Localization.swift in Sources */,
 				0527AA05250FC088007A043A /* BaseNavigationController.swift in Sources */,
 				05B3BBE6251112EB00D44A9B /* DashboardView.swift in Sources */,
-				05D9B6D02511626D0040B019 /* WeddingDataModel.xcdatamodeld in Sources */,
 				05B3BBF22511430F00D44A9B /* FontAttributesGenerator.swift in Sources */,
 				0527AA09250FC18C007A043A /* AppCoordinator.swift in Sources */,
 				05B3BBE42511116300D44A9B /* Constant.swift in Sources */,
 				05B3BBF32511430F00D44A9B /* UIFont.swift in Sources */,
 				05B3BBFF251143F800D44A9B /* UIColor.swift in Sources */,
-				05D9B6CD251162220040B019 /* CoreDataStack.swift in Sources */,
 				0527A9CC250D448E007A043A /* SceneDelegate.swift in Sources */,
 				05B3BBED2511426500D44A9B /* CategoryCollectionViewCell.swift in Sources */,
 				05B3BBFD251143B100D44A9B /* BusinessListCell.swift in Sources */,
@@ -661,19 +649,6 @@
 			productName = Framework;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		05D9B6CE2511626D0040B019 /* WeddingDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				05D9B6CF2511626D0040B019 /* WeddingDataModel.xcdatamodel */,
-			);
-			currentVersion = 05D9B6CF2511626D0040B019 /* WeddingDataModel.xcdatamodel */;
-			path = WeddingDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0527A9BE250D448E007A043A /* Project object */;
 }
