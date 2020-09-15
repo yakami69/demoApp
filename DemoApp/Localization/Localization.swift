@@ -1,9 +1,8 @@
 //
 //  Localization.swift
-//  TipQuick
+//  Wedding App
 //
-//  Created by Narendra Kathayat on 8/13/20.
-//  Copyright © 2020 kathayatnk. All rights reserved.
+//  Created by Mahesh Yakami on 8/13/20.
 //
 
 import Foundation

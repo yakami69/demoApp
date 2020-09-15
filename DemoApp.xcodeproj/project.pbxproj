@@ -26,6 +26,16 @@
 		05B3BBE6251112EB00D44A9B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE5251112EB00D44A9B /* DashboardView.swift */; };
 		05B3BBE8251112FB00D44A9B /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE7251112FB00D44A9B /* DashboardViewModel.swift */; };
 		05B3BBEA2511130800D44A9B /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE92511130800D44A9B /* DashboardController.swift */; };
+		05B3BBED2511426500D44A9B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBEC2511426500D44A9B /* CategoryCollectionViewCell.swift */; };
+		05B3BBF22511430F00D44A9B /* FontAttributesGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBF02511430F00D44A9B /* FontAttributesGenerator.swift */; };
+		05B3BBF32511430F00D44A9B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBF12511430F00D44A9B /* UIFont.swift */; };
+		05B3BBF82511431700D44A9B /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05B3BBF42511431600D44A9B /* Gotham-Light.otf */; };
+		05B3BBF92511431700D44A9B /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05B3BBF52511431700D44A9B /* Gotham-Bold.otf */; };
+		05B3BBFA2511431700D44A9B /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05B3BBF62511431700D44A9B /* Gotham-Book.otf */; };
+		05B3BBFB2511431700D44A9B /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05B3BBF72511431700D44A9B /* Gotham-Black.otf */; };
+		05B3BBFD251143B100D44A9B /* BusinessListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBFC251143B100D44A9B /* BusinessListCell.swift */; };
+		05B3BBFF251143F800D44A9B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBFE251143F800D44A9B /* UIColor.swift */; };
+		05B3BC01251147EC00D44A9B /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BC00251147EC00D44A9B /* AppEnvironment.swift */; };
 		9461259417ED0520E9E43B54 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0621CBDA9297D6B8268AD40A /* Pods_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +58,16 @@
 		05B3BBE5251112EB00D44A9B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		05B3BBE7251112FB00D44A9B /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		05B3BBE92511130800D44A9B /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
+		05B3BBEC2511426500D44A9B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		05B3BBF02511430F00D44A9B /* FontAttributesGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAttributesGenerator.swift; sourceTree = "<group>"; };
+		05B3BBF12511430F00D44A9B /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		05B3BBF42511431600D44A9B /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		05B3BBF52511431700D44A9B /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		05B3BBF62511431700D44A9B /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		05B3BBF72511431700D44A9B /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		05B3BBFC251143B100D44A9B /* BusinessListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessListCell.swift; sourceTree = "<group>"; };
+		05B3BBFE251143F800D44A9B /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		05B3BC00251147EC00D44A9B /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		0621CBDA9297D6B8268AD40A /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA0AB78BBB559071F584459 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		B45DFD27478EB35554378557 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +109,9 @@
 		0527A9C8250D448E007A043A /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				05B3BBEF251142AB00D44A9B /* Font */,
+				05B3BBEE251142A400D44A9B /* Extensions */,
+				05B3BBEB2511424A00D44A9B /* Common */,
 				05B3BBE02511112B00D44A9B /* DB */,
 				05B3BBDF251110FA00D44A9B /* Assets */,
 				05B3BBDE251110E600D44A9B /* Helper */,
@@ -104,6 +127,8 @@
 		0527A9E0250D44A4007A043A /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				0527A9C9250D448E007A043A /* AppDelegate.swift */,
+				0527A9CB250D448E007A043A /* SceneDelegate.swift */,
 				0527A9D7250D4491007A043A /* LaunchScreen.storyboard */,
 				0527A9DA250D4491007A043A /* Info.plist */,
 			);
@@ -139,12 +164,11 @@
 		0527A9FB250FBF0A007A043A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				05B3BC00251147EC00D44A9B /* AppEnvironment.swift */,
 				0527AA07250FC18C007A043A /* AppCoordinator.swift */,
 				0527AA06250FC18C007A043A /* AppLaunchBuilder.swift */,
 				0527AA02250FC087007A043A /* AppBaseController.swift */,
 				0527AA03250FC088007A043A /* BaseNavigationController.swift */,
-				0527A9C9250D448E007A043A /* AppDelegate.swift */,
-				0527A9CB250D448E007A043A /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -188,6 +212,36 @@
 			children = (
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		05B3BBEB2511424A00D44A9B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				05B3BBFC251143B100D44A9B /* BusinessListCell.swift */,
+				05B3BBEC2511426500D44A9B /* CategoryCollectionViewCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		05B3BBEE251142A400D44A9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05B3BBFE251143F800D44A9B /* UIColor.swift */,
+				05B3BBF02511430F00D44A9B /* FontAttributesGenerator.swift */,
+				05B3BBF12511430F00D44A9B /* UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05B3BBEF251142AB00D44A9B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				05B3BBF72511431700D44A9B /* Gotham-Black.otf */,
+				05B3BBF52511431700D44A9B /* Gotham-Bold.otf */,
+				05B3BBF62511431700D44A9B /* Gotham-Book.otf */,
+				05B3BBF42511431600D44A9B /* Gotham-Light.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		514EA0E75BD2A3328931FC62 /* Pods */ = {
@@ -276,6 +330,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B3BBFA2511431700D44A9B /* Gotham-Book.otf in Resources */,
+				05B3BBFB2511431700D44A9B /* Gotham-Black.otf in Resources */,
+				05B3BBF92511431700D44A9B /* Gotham-Bold.otf in Resources */,
+				05B3BBF82511431700D44A9B /* Gotham-Light.otf in Resources */,
 				0527A9D9250D4491007A043A /* LaunchScreen.storyboard in Resources */,
 				0527A9D6250D4491007A043A /* Assets.xcassets in Resources */,
 				05B3BBDC25110FD800D44A9B /* English.strings in Resources */,
@@ -319,13 +377,19 @@
 				0527A9CA250D448E007A043A /* AppDelegate.swift in Sources */,
 				05B3BBE8251112FB00D44A9B /* DashboardViewModel.swift in Sources */,
 				05B3BBEA2511130800D44A9B /* DashboardController.swift in Sources */,
+				05B3BC01251147EC00D44A9B /* AppEnvironment.swift in Sources */,
 				0527AA08250FC18C007A043A /* AppLaunchBuilder.swift in Sources */,
 				05B3BBDD25110FD800D44A9B /* Localization.swift in Sources */,
 				0527AA05250FC088007A043A /* BaseNavigationController.swift in Sources */,
 				05B3BBE6251112EB00D44A9B /* DashboardView.swift in Sources */,
+				05B3BBF22511430F00D44A9B /* FontAttributesGenerator.swift in Sources */,
 				0527AA09250FC18C007A043A /* AppCoordinator.swift in Sources */,
 				05B3BBE42511116300D44A9B /* Constant.swift in Sources */,
+				05B3BBF32511430F00D44A9B /* UIFont.swift in Sources */,
+				05B3BBFF251143F800D44A9B /* UIColor.swift in Sources */,
 				0527A9CC250D448E007A043A /* SceneDelegate.swift in Sources */,
+				05B3BBED2511426500D44A9B /* CategoryCollectionViewCell.swift in Sources */,
+				05B3BBFD251143B100D44A9B /* BusinessListCell.swift in Sources */,
 				05B3BBE22511115C00D44A9B /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

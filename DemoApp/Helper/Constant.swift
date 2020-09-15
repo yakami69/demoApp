@@ -1,9 +1,8 @@
 //
 //  Constant.swift
-//  TipQuick
+//  Wedding App
 //
-//  Created by Narendra Kathayat on 8/11/20.
-//  Copyright © 2020 Ebpearls. All rights reserved.
+//  Created by Mahesh Yakami on 8/11/20.
 //
 
 import UIKit

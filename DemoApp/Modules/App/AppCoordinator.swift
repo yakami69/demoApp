@@ -27,40 +27,23 @@ final class AppCoordinator: BaseCoordinator {
     
     /// Start the coordinator process
     override func start(with deepLink: DeepLink?) {
-        
+        showDashboard()
     }
     
-    /// Method that handles the initial route redirection logic
-    /// - Parameter deeplink: deeplink if available
-
-    
-    /// Run the auth coordinator
-    private func runAuthCoordinator(deeplink: DeepLink?) {
-//        let coordinator = AuthCoordinator(route: route, userManager: userManager, cacheManager: cacheManager)
-//        coordinator.onFinish = { [unowned self] in
-//            self.performRedirection()
-//        }
-//        coordinate(to: coordinator, deepLink: deeplink)
-    }
-    
-    private func showOnboarding() {
-        
-        // Instantiate
-//        let onboardingView = OnboardingView()
-//        let onboardingViewModel = OnboardingViewModel()
-//        let onboardingController = OnboardingController(baseView: onboardingView, baseViewModel: onboardingViewModel)
-//
-//        /// Observe Triggers
-//        onboardingViewModel.trigger.sink { [weak self] (route) in
-//            guard let self = self else { return }
-//            self.handleRouteTrigger(route)
-//        }.store(in: &onboardingViewModel.bag)
-//
-//        route.push(onboardingController, animated: true)
-    }
     
     private func showDashboard() {
+
+        let dashboardView = DashboardView()
+        let dashboardViewModel = DashboardViewModel()
+        let dashboardController = DashboardController(baseView: dashboardView, baseViewModel: dashboardViewModel)
         
+        /// Observe Triggers
+        dashboardViewModel.trigger.sink { [weak self] (route) in
+            guard let self = self else { return }
+            self.handleRouteTrigger(route)
+        }.store(in: &dashboardViewModel.bag)
+        
+        route.setRoot(dashboardController, animated: true)
     }
     
     private func handleRouteTrigger(_ trigger: AppRoutable) {

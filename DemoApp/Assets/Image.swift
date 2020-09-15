@@ -1,9 +1,8 @@
 //
 //  Image.swift
-//  TipQuick
+//  Wedding App
 //
-//  Created by Narendra Kathayat on 8/11/20.
-//  Copyright © 2020 Ebpearls. All rights reserved.
+//  Created by Mahesh Yakami on 8/11/20.
 //
 
 import UIKit
@@ -23,6 +22,8 @@ extension UIImage {
     
     /// The back button icon
     static var back: UIImage? { return UIImage.named("backArrow") }
+    
+    static var backgroundImage: UIImage? { return UIImage.named("backgroundImage") }
     
     func setTemplate() -> UIImage {
         return self.withRenderingMode(.alwaysTemplate)

@@ -67,7 +67,7 @@ extension AppLaunchBuilder {
         /// Prepare the configuration
         let clientConfig = ClientConfig { [unowned self] (config) in
             config.application = self.application
-//            config.environment = self.getEnvironement()
+            config.environment = self.getEnvironement()
             config.launchOptions = self.launchOptions
         }
         
@@ -101,13 +101,13 @@ extension AppLaunchBuilder {
     }
     
     /// Method to get environement based on scheme
-//    private func getEnvironement() -> Environment {
-//        #if DEBUG
-//        return Staging()
-//        #else
-//        return Live()
-//        #endif
-//    }
+    private func getEnvironement() -> Environment {
+        #if DEBUG
+        return Staging()
+        #else
+        return Live()
+        #endif
+    }
     
     private func test() {
       //  window?.makeKeyAndVisible()
