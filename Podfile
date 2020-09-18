@@ -6,5 +6,9 @@ target 'DemoApp' do
   use_frameworks!
 
   # Pods for DemoApp
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Hero'
+  pod 'Kingfisher'
 
 end

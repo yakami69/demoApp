@@ -1,6 +1,6 @@
 //
 //  Image.swift
-//  Wedding App
+//  Demo App
 //
 //  Created by Mahesh Yakami on 8/11/20.
 //

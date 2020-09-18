@@ -1,6 +1,6 @@
 //
 //  AppLaunchBuilder.swift
-//  Wedding App
+//  Demo App
 //
 //  Created by Mahesh Yakami on 8/11/20.
 //
@@ -48,8 +48,6 @@ final class AppLaunchBuilder {
         
         /// initialize the framework
         framework = self.configureFramework()
-        
-
         
         // run the coordinator
         appCoordinator.start(with: deepLink)

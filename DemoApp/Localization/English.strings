@@ -1,13 +1,14 @@
 /* 
  English.strings
- Wedding App
+ Demo App
  
  Created by Mahesh Yakami on 9/13/20.
  */
 "NONE" = "";
-"APP_NAME" = "Wedding App";
+"APP_NAME" = "Demo App";
 "OK" = "Ok";
 "YES" = "Yes";
 "REQUIRED_PREFIX" = "%@ is required.";
 "VALID_REQUIRED_PREFIX" = "Please provide a valid %@.";
 "CANCEL" = "Cancel";
+"HOME" = "Home";

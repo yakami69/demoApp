@@ -18,12 +18,20 @@
 		0527AA08250FC18C007A043A /* AppLaunchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0527AA06250FC18C007A043A /* AppLaunchBuilder.swift */; };
 		0527AA09250FC18C007A043A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0527AA07250FC18C007A043A /* AppCoordinator.swift */; };
 		0527AA0C250FC576007A043A /* Framework in Frameworks */ = {isa = PBXBuildFile; productRef = 0527AA0B250FC576007A043A /* Framework */; };
+		0540335225151C0400512A8E /* SubCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540335125151C0400512A8E /* SubCategoryViewModel.swift */; };
+		0540335525151C1000512A8E /* SubCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540335425151C1000512A8E /* SubCategoryController.swift */; };
+		054033712515408600512A8E /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054033702515408600512A8E /* BusinessListView.swift */; };
+		05403374251540CE00512A8E /* BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05403373251540CE00512A8E /* BusinessListViewModel.swift */; };
+		054033772515412500512A8E /* BusinessListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054033762515412500512A8E /* BusinessListController.swift */; };
+		0573A1812514D7C500B13010 /* BusinessDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573A17E2514D7C500B13010 /* BusinessDetailScreenView.swift */; };
+		0573A1822514D7C500B13010 /* BusinessDetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573A17F2514D7C500B13010 /* BusinessDetailScreenViewController.swift */; };
+		0573A1832514D7C500B13010 /* BusinessDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573A1802514D7C500B13010 /* BusinessDetailScreenViewModel.swift */; };
 		05B3BBD825110F8300D44A9B /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBD725110F8300D44A9B /* AppRoute.swift */; };
 		05B3BBDC25110FD800D44A9B /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05B3BBDA25110FD800D44A9B /* English.strings */; };
 		05B3BBDD25110FD800D44A9B /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBDB25110FD800D44A9B /* Localization.swift */; };
 		05B3BBE22511115C00D44A9B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE12511115C00D44A9B /* Image.swift */; };
 		05B3BBE42511116300D44A9B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE32511116300D44A9B /* Constant.swift */; };
-		05B3BBE6251112EB00D44A9B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE5251112EB00D44A9B /* DashboardView.swift */; };
+		05B3BBE6251112EB00D44A9B /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE5251112EB00D44A9B /* CategoryListView.swift */; };
 		05B3BBE8251112FB00D44A9B /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE7251112FB00D44A9B /* DashboardViewModel.swift */; };
 		05B3BBEA2511130800D44A9B /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBE92511130800D44A9B /* DashboardController.swift */; };
 		05B3BBED2511426500D44A9B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3BBEC2511426500D44A9B /* CategoryCollectionViewCell.swift */; };
@@ -53,12 +61,20 @@
 		0527AA03250FC088007A043A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0527AA06250FC18C007A043A /* AppLaunchBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLaunchBuilder.swift; sourceTree = "<group>"; };
 		0527AA07250FC18C007A043A /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0540335125151C0400512A8E /* SubCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewModel.swift; sourceTree = "<group>"; };
+		0540335425151C1000512A8E /* SubCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryController.swift; sourceTree = "<group>"; };
+		054033702515408600512A8E /* BusinessListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListView.swift; sourceTree = "<group>"; };
+		05403373251540CE00512A8E /* BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModel.swift; sourceTree = "<group>"; };
+		054033762515412500512A8E /* BusinessListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListController.swift; sourceTree = "<group>"; };
+		0573A17E2514D7C500B13010 /* BusinessDetailScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailScreenView.swift; sourceTree = "<group>"; };
+		0573A17F2514D7C500B13010 /* BusinessDetailScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailScreenViewController.swift; sourceTree = "<group>"; };
+		0573A1802514D7C500B13010 /* BusinessDetailScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailScreenViewModel.swift; sourceTree = "<group>"; };
 		05B3BBD725110F8300D44A9B /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		05B3BBDA25110FD800D44A9B /* English.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
 		05B3BBDB25110FD800D44A9B /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		05B3BBE12511115C00D44A9B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		05B3BBE32511116300D44A9B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		05B3BBE5251112EB00D44A9B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		05B3BBE5251112EB00D44A9B /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		05B3BBE7251112FB00D44A9B /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		05B3BBE92511130800D44A9B /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 		05B3BBEC2511426500D44A9B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -144,7 +160,6 @@
 		0527A9E1250D44C1007A043A /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				05B3BBE5251112EB00D44A9B /* DashboardView.swift */,
 				05B3BBE7251112FB00D44A9B /* DashboardViewModel.swift */,
 				05B3BBE92511130800D44A9B /* DashboardController.swift */,
 			);
@@ -163,7 +178,9 @@
 		0527A9E4250D44E8007A043A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				05D9B6EB25116C940040B019 /* SubCategory */,
+				0540336F2515406100512A8E /* BusinessList */,
+				0540334D2515191500512A8E /* SubCategoryScreen */,
+				05D9B6EB25116C940040B019 /* BusinessInfoScreen */,
 				0527A9FB250FBF0A007A043A /* App */,
 				0527A9E1250D44C1007A043A /* Dashboard */,
 			);
@@ -180,6 +197,25 @@
 				0527AA03250FC088007A043A /* BaseNavigationController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		0540334D2515191500512A8E /* SubCategoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0540335125151C0400512A8E /* SubCategoryViewModel.swift */,
+				0540335425151C1000512A8E /* SubCategoryController.swift */,
+			);
+			path = SubCategoryScreen;
+			sourceTree = "<group>";
+		};
+		0540336F2515406100512A8E /* BusinessList */ = {
+			isa = PBXGroup;
+			children = (
+				054033702515408600512A8E /* BusinessListView.swift */,
+				05403373251540CE00512A8E /* BusinessListViewModel.swift */,
+				054033762515412500512A8E /* BusinessListController.swift */,
+			);
+			path = BusinessList;
 			sourceTree = "<group>";
 		};
 		05B3BBD625110F6E00D44A9B /* Route */ = {
@@ -226,6 +262,7 @@
 		05B3BBEB2511424A00D44A9B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				05B3BBE5251112EB00D44A9B /* CategoryListView.swift */,
 				05B3BBFC251143B100D44A9B /* BusinessListCell.swift */,
 				05B3BBEC2511426500D44A9B /* CategoryCollectionViewCell.swift */,
 			);
@@ -254,11 +291,14 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		05D9B6EB25116C940040B019 /* SubCategory */ = {
+		05D9B6EB25116C940040B019 /* BusinessInfoScreen */ = {
 			isa = PBXGroup;
 			children = (
+				0573A17E2514D7C500B13010 /* BusinessDetailScreenView.swift */,
+				0573A17F2514D7C500B13010 /* BusinessDetailScreenViewController.swift */,
+				0573A1802514D7C500B13010 /* BusinessDetailScreenViewModel.swift */,
 			);
-			path = SubCategory;
+			path = BusinessInfoScreen;
 			sourceTree = "<group>";
 		};
 		514EA0E75BD2A3328931FC62 /* Pods */ = {
@@ -289,6 +329,7 @@
 				0527A9C2250D448E007A043A /* Sources */,
 				0527A9C3250D448E007A043A /* Frameworks */,
 				0527A9C4250D448E007A043A /* Resources */,
+				5978B8F01F545B303B52DD78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,7 +352,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Mahesh Yakami";
 				TargetAttributes = {
 					0527A9C5250D448E007A043A = {
@@ -383,6 +424,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5978B8F01F545B303B52DD78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -397,19 +455,27 @@
 				05B3BBEA2511130800D44A9B /* DashboardController.swift in Sources */,
 				05D9B6C5251153860040B019 /* DataModel.swift in Sources */,
 				05B3BC01251147EC00D44A9B /* AppEnvironment.swift in Sources */,
+				054033712515408600512A8E /* BusinessListView.swift in Sources */,
 				05D9B6EA251165790040B019 /* String.swift in Sources */,
 				0527AA08250FC18C007A043A /* AppLaunchBuilder.swift in Sources */,
+				0573A1832514D7C500B13010 /* BusinessDetailScreenViewModel.swift in Sources */,
+				0540335225151C0400512A8E /* SubCategoryViewModel.swift in Sources */,
 				05B3BBDD25110FD800D44A9B /* Localization.swift in Sources */,
 				0527AA05250FC088007A043A /* BaseNavigationController.swift in Sources */,
-				05B3BBE6251112EB00D44A9B /* DashboardView.swift in Sources */,
+				05B3BBE6251112EB00D44A9B /* CategoryListView.swift in Sources */,
 				05B3BBF22511430F00D44A9B /* FontAttributesGenerator.swift in Sources */,
 				0527AA09250FC18C007A043A /* AppCoordinator.swift in Sources */,
 				05B3BBE42511116300D44A9B /* Constant.swift in Sources */,
+				054033772515412500512A8E /* BusinessListController.swift in Sources */,
 				05B3BBF32511430F00D44A9B /* UIFont.swift in Sources */,
+				0540335525151C1000512A8E /* SubCategoryController.swift in Sources */,
 				05B3BBFF251143F800D44A9B /* UIColor.swift in Sources */,
+				0573A1822514D7C500B13010 /* BusinessDetailScreenViewController.swift in Sources */,
 				0527A9CC250D448E007A043A /* SceneDelegate.swift in Sources */,
 				05B3BBED2511426500D44A9B /* CategoryCollectionViewCell.swift in Sources */,
+				0573A1812514D7C500B13010 /* BusinessDetailScreenView.swift in Sources */,
 				05B3BBFD251143B100D44A9B /* BusinessListCell.swift in Sources */,
+				05403374251540CE00512A8E /* BusinessListViewModel.swift in Sources */,
 				05B3BBE22511115C00D44A9B /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +520,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -514,6 +581,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

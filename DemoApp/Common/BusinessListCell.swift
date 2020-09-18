@@ -1,13 +1,13 @@
 //
 //  BusinessListCell.swift
-//  Wedding App
+//  Demo App
 //
 //  Created by Mahesh Yakami on 1/8/20.
 //
 
 import UIKit
 
-class BusinessListCell: UITableViewCell {
+class BusinessListCell: UICollectionViewCell {
     
     var businessNameText : String = "" {
         didSet{
@@ -33,7 +33,6 @@ class BusinessListCell: UITableViewCell {
     // Business Logo
     lazy var businessLogo: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "ebpearls1")
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 31.0
         imageView.clipsToBounds = true
@@ -60,8 +59,8 @@ class BusinessListCell: UITableViewCell {
         return label
     }()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         create()
     }
     
@@ -72,7 +71,6 @@ class BusinessListCell: UITableViewCell {
     /// Creating Cell Row
     func create() {
         backgroundColor = .clear
-        selectionStyle = .none
         
         // Adding Container(Cell Row)
         addSubview(container)
@@ -80,7 +78,7 @@ class BusinessListCell: UITableViewCell {
         NSLayoutConstraint.activate([
             container.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             container.bottomAnchor.constraint(equalTo: bottomAnchor),
-            container.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            container.leadingAnchor.constraint(equalTo: leadingAnchor),
             container.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
         ])
         
@@ -90,8 +88,8 @@ class BusinessListCell: UITableViewCell {
         NSLayoutConstraint.activate([
             businessLogo.centerYAnchor.constraint(equalTo: container.centerYAnchor),
             businessLogo.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 7),
-            businessLogo.widthAnchor.constraint(equalToConstant: 62),
-            businessLogo.heightAnchor.constraint(equalToConstant: 62)
+            businessLogo.widthAnchor.constraint(equalToConstant: 100),
+            businessLogo.heightAnchor.constraint(equalToConstant: 100)
         ])
         
         // Adding Business Title

@@ -11,10 +11,9 @@ import Framework
 
 class DashboardController: AppBaseController {
     
-    
     /// View
-     private lazy var screenView: DashboardView = {
-         return baseView as! DashboardView //swiftlint:disable:this force_cast
+     private lazy var screenView: CategoryListView = {
+         return baseView as! CategoryListView //swiftlint:disable:this force_cast
      }()
      
      /// View Model
@@ -24,12 +23,18 @@ class DashboardController: AppBaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        test()
+        loadData()
         screenView.collectionView.delegate = self
         screenView.collectionView.dataSource = self
     }
     
-    func test() {
+    override func setupUI() {
+        showLeftBarButton = false
+        navigationController?.isNavigationBarHidden = false
+        navigationItem.title = LocalizedKey.home.value
+    }
+    
+    func loadData() {
         guard let jSONURL = Bundle.main.url(forResource: "MOCK_DATA", withExtension: ".json"),
             let jSONData = try? Data(contentsOf: jSONURL) else {
                 debugPrint("File Not Found / File Not Loaded")
@@ -39,9 +44,7 @@ class DashboardController: AppBaseController {
 
         do {
             let people = try decoder.decode([Category].self, from: jSONData)
-//            print("Decoded:\(people)\n------------------")
             viewModel.categoryCollection.append(contentsOf: people)
-//            print("\n\n----------------------\nViewModel: \(viewModel.categoryCollection)")
         } catch {
             print("Error: \(error.localizedDescription)")
         }
@@ -57,6 +60,8 @@ extension DashboardController: UICollectionViewDelegate, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCollectionViewCell", for: indexPath) as! CategoryCollectionViewCell
+        cell.backgroundImage.contentMode = .scaleAspectFill
+        cell.backgroundImage.kf.setImage(with: URL(string: viewModel.categoryCollection[indexPath.row].categoryImageURL!))
         cell.categoryLabelText = viewModel.categoryCollection[indexPath.row].categoryName!
         return cell
     }
@@ -81,7 +86,18 @@ extension DashboardController: UICollectionViewDelegate, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        
+        if let subcategory = viewModel.categoryCollection[indexPath.row].subCategory, subcategory.count > 0 {
+            viewModel.trigger.send(AppRoute.subCategory(viewModel.categoryCollection[indexPath.row]))
+        }
+        else {
+            if let business = viewModel.categoryCollection[indexPath.row].business, business.count > 0{
+                viewModel.trigger.send(AppRoute.businessList(business, viewModel.categoryCollection[indexPath.row].categoryName!))
+            } else {
+                print("NO BUSINESS RELATED TO SELECTED CATEGORY")
+            }
+            
+        }
+        
     }
-    
 }

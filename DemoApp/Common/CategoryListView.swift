@@ -1,5 +1,5 @@
 //
-//  DashboardView.swift
+//  CategoryListView.swift
 //  DemoApp
 //
 //  Created by Mahesh Yakami on 9/15/20.
@@ -9,7 +9,7 @@
 import UIKit
 import Framework
 
-class DashboardView: BaseView {
+class CategoryListView: BaseView {
     //MARK: - collection view
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

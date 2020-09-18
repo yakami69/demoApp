@@ -1,6 +1,6 @@
 //
 //  AppCoordinator.swift
-//  Wedding App
+//  Demo App
 //
 //  Created by Mahesh Yakami on 8/11/20.
 //
@@ -32,8 +32,8 @@ final class AppCoordinator: BaseCoordinator {
     
     
     private func showDashboard() {
-
-        let dashboardView = DashboardView()
+        
+        let dashboardView = CategoryListView()
         let dashboardViewModel = DashboardViewModel()
         let dashboardController = DashboardController(baseView: dashboardView, baseViewModel: dashboardViewModel)
         
@@ -46,9 +46,68 @@ final class AppCoordinator: BaseCoordinator {
         route.setRoot(dashboardController, animated: true)
     }
     
+    private func showSubCategoryView(category: Category) {
+        let howSubCategoryView = CategoryListView()
+        let howSubCategoryViewModel = SubCategoryViewModel(category: category)
+        let howSubCategoryController = SubCategoryController(baseView: howSubCategoryView, baseViewModel: howSubCategoryViewModel)
+        
+        /// Observe Triggers
+        howSubCategoryViewModel.trigger.sink { [weak self] (route) in
+            guard let self = self else { return }
+            self.handleRouteTrigger(route)
+        }.store(in: &howSubCategoryViewModel.bag)
+        
+        route.push(howSubCategoryController, animated: true)
+    }
+    
+    private func showBusinessList() {
+        let dashboardView = CategoryListView()
+        let dashboardViewModel = DashboardViewModel()
+        let dashboardController = DashboardController(baseView: dashboardView, baseViewModel: dashboardViewModel)
+        
+        /// Observe Triggers
+        dashboardViewModel.trigger.sink { [weak self] (route) in
+            guard let self = self else { return }
+            self.handleRouteTrigger(route)
+        }.store(in: &dashboardViewModel.bag)
+        
+        route.push(dashboardController, animated: true)
+    }
+    
+    private func showBusinessDetailScreen(business: Business) {
+        let businessDetailScreenViewModel = BusinessDetailScreenViewModel(businessInfo: business)
+        let businessDetailScreenView = BusinessDetailScreenView()
+        let businessDetailScreenViewController = BusinessDetailScreenViewController(baseView: businessDetailScreenView, baseViewModel: businessDetailScreenViewModel)
+        
+        businessDetailScreenViewModel.trigger.sink { [weak self] (route) in
+            guard let self = self else { return }
+            self.handleRouteTrigger(route)
+        }.store(in: &businessDetailScreenViewModel.bag)
+        
+        route.push(businessDetailScreenViewController, animated: true)
+    }
+    
+    private func showBusinessListScreen(business: [Business], title: String) {
+        let businessListViewModel = BusinessListViewModel(business: business,title: title)
+        let businessListView = BusinessListView()
+        let businessListController = BusinessListController(baseView: businessListView, baseViewModel: businessListViewModel)
+        
+        businessListViewModel.trigger.sink { [weak self] (route) in
+            guard let self = self else { return }
+            self.handleRouteTrigger(route)
+        }.store(in: &businessListViewModel.bag)
+        
+        route.push(businessListController, animated: true)
+    }
+    
     private func handleRouteTrigger(_ trigger: AppRoutable) {
         switch trigger {
-
+        case AppRoute.subCategory(let category):
+            showSubCategoryView(category: category)
+        case AppRoute.businessDetail(let businessInfo):
+            showBusinessDetailScreen(business: businessInfo)
+        case AppRoute.businessList(let business, let title):
+            showBusinessListScreen(business: business, title: title)
         default:
             break
         }

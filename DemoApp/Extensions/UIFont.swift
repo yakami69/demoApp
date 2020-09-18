@@ -1,6 +1,6 @@
 //
 //  UIFont.swift
-//  Wedding App
+//  Demo App
 //
 //  Created by Mahesh Yakami on 12/3/19.
 //

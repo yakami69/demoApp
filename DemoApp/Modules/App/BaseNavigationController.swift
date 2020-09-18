@@ -1,6 +1,6 @@
 //
 //  BaseNavigationController.swift
-//  Wedding App
+//  Demo App
 //
 //  Created by Mahesh Yakami on 9/2/20.
 //
@@ -12,6 +12,7 @@ class BaseNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.isNavigationBarHidden = false
         /// set the appearance
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()

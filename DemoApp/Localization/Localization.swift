@@ -1,6 +1,6 @@
 //
 //  Localization.swift
-//  Wedding App
+//  Demo App
 //
 //  Created by Mahesh Yakami on 8/13/20.
 //
@@ -25,6 +25,7 @@ enum LocalizedKey: Localizable {
     case ok
     case yes
     case cancel
+    case home
     
     /// The key to fetch the corresponding localized string
     var key: String {
@@ -34,6 +35,7 @@ enum LocalizedKey: Localizable {
         case .ok: return "OK"
         case .yes: return "YES"
         case .cancel: return "CANCEL"
+        case .home: return "HOME"
         
         }
     }

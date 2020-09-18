@@ -1,3 +1,36 @@
-PODFILE CHECKSUM: b501d7897293fa3721933bd09ba2baf1e98af4c3
+PODS:
+  - Hero (1.5.0)
+  - Kingfisher (5.15.0):
+    - Kingfisher/Core (= 5.15.0)
+  - Kingfisher/Core (5.15.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+
+DEPENDENCIES:
+  - Hero
+  - Kingfisher
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Hero
+    - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+
+PODFILE CHECKSUM: 2d1c887ea536f6e35311cdd9d650ef315c0979b9
 
 COCOAPODS: 1.9.3
